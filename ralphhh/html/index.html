@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <title>Currículo – Bruno Kay</title>
+</head>
+
+<body>
+  <script>
+    const theme = localStorage.getItem("theme") || "dark";
+    document.body.classList.add(theme);
+  </script>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-textbox">
+        <div>
+          <h1 class="h1">
+            <span>Olá, eu sou</span>
+            <span>Bruno Yudi Kay</span>
+          </h1>
+          <p class="header-text">
+            Estudante Técnico em Desenvolvimento de Sistemas pelo CEEP Assaí, com forte interesse em Inteligência Artificial, Análise de Dados, Inovação Educacional e Desenvolvimento Web.
+          </p>
+          <p class="header-text">
+            Tenho experiência prática com Python, JavaScript, Flask, HTML/CSS, YOLO, OpenCV, Pandas e TensorFlow. Atuo de forma proativa em projetos que aliam tecnologia e impacto social, como o ClassEye.
+          </p>
+          <div class="header-btns">
+            <a href="#skills" class="btn btn-cta">Habilidades</a>
+            <a href="#projects" class="btn btn-secondary">Projetos</a>
+          </div>
+        </div>
+        <img src="../images/minhafoto.PNG" alt="Minha Foto" class="minha-foto" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="work" id="projects">
+      <div class="container">
+        <h2 class="h2">Projetos em Destaque</h2>
+        <div class="work-boxes">
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">ClassEye (Detectify)</h3>
+              <p class="work-text">
+                Sistema de monitoramento escolar com IA. Utiliza YOLO, OpenCV e Flask para detectar rostos e gerar relatórios de comportamento e presença em sala de aula.
+              </p>
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7320588112915554306/" target="_blank">Ver vídeo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="h2">Minhas Competências Técnicas</h2>
+        <div class="skills-imgs">
+          <img src="../images/js.png" alt="JavaScript" class="skills-img" loading="lazy" />
+          <img src="../images/py.png" alt="Python" class="skills-img" loading="lazy" />
+          <img src="../images/gpt.webp" alt="IA/ChatGPT" class="skills-img" loading="lazy" />
+        </div>
+        <ul class="skills-list">
+          <li>Python, Flask, Pandas, TensorFlow, OpenCV, YOLO</li>
+          <li>JavaScript, HTML, CSS</li>
+          <li>Integração com APIs e automações</li>
+          <li>Criação de dashboards e visualizações de dados</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="languages">
+      <div class="container">
+        <h2 class="h2">Idiomas</h2>
+        <ul>
+          <li>Português – Nativo</li>
+          <li>Inglês – Avançado (leitura técnica, participação em comunidades internacionais)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <nav>
+          <ol class="footer-links">
+            <li class="footer-link">
+              <a href="https://github.com/brunoxzr" target="_blank" title="GitHub">
+                <img src="../images/git.png" alt="GitHub" />
+              </a>
+            </li>
+            <li class="footer-link">
+              <a href="https://www.linkedin.com/in/bruno-yudi-kay-383201317" target="_blank" title="LinkedIn">
+                <img src="../images/linkd.png" alt="LinkedIn" />
+              </a>
+            </li>
+          </ol>
+        </nav>
+        <label class="theme-switch" for="theme-switch">
+          <span>Tema Escuro</span>
+          <input type="checkbox" id="theme-switch" role="switch" />
+        </label>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
